@@ -1,9 +1,3 @@
-In this documentation, we will do 3 points :
-
-1. Deploy Kafka service using systemd
-2. Create Topic, Test produce data and consume data using CLI
-3. Zookeeper Quorum and Kafka Cluster id check
-
 # Deploy Kafka service using systemd
 
 ## Prerequisite
