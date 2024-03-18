@@ -193,3 +193,45 @@ echo "Hello, World" | ~/kafka/bin/kafka-console-producer.sh --broker-list localh
 
 # Zookeeper Quorum and Kafka Cluster id check
 
+* Check topic list
+```
+~/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --list
+```
+result
+```
+TutorialTopic
+__consumer_offsets
+```
+
+```./kafka-topics.sh --bootstrap-server localhost:9092 --describe --to
+pic TutorialTopic
+```
+result
+```
+Topic: TutorialTopic    TopicId: HUnxML0SQt-naKfL33C7rA PartitionCount: 1       ReplicationFactor: 1 Configs:
+        Topic: TutorialTopic    Partition: 0    Leader: 0       Replicas: 0     Isr: 0
+```
+
+```
+./bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list
+```
+
+result
+```
+no display
+```
+
+```
+./bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group mygroup
+```
+
+* result
+```
+no display
+```
+
+```
+bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group my-group
+```
+
+based on web kafka, cluster
