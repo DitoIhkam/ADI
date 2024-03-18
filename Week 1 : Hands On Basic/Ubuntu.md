@@ -1,3 +1,4 @@
+![alt text](?raw=true)
 # Deploy Kafka service using systemd
 
 ## Prerequisite
@@ -7,6 +8,7 @@
 ```
 sudo apt update
 ```
+![alt text](https://github.com/DitoIhkam/ADI/blob/main/Week%201%20%3A%20Hands%20On%20Basic/Images/1.%20SUDO%20APT%20UPDATE.png?raw=true)
 
 ### 2. install java/jdk
 
@@ -18,10 +20,11 @@ sudo apt install default-jdk
 ```
 java --version
 ```
+![alt text](https://github.com/DitoIhkam/ADI/blob/main/Week%201%20%3A%20Hands%20On%20Basic/Images/2.%20INSTALL%20JDK.png?raw=true)
 
 ## Install & Configuration
 
-### 1\. Add User
+### 1. Add User
 
 - Create name user
 
@@ -46,8 +49,10 @@ sudo adduser kafka
 ```
 sudo su -l kafka
 ```
+![alt text](https://github.com/DitoIhkam/ADI/blob/main/Week%201%20%3A%20Hands%20On%20Basic/Images/3.%20ADD%20USER.png?raw=true)
 
-### 2\. Download & Extract kafka binary
+
+### 2. Download & Extract kafka binary
 
 - Create directory for kafka installer
 
@@ -60,8 +65,12 @@ mkdir ~/Downloads
 ```
 wget https://downloads.apache.org/kafka/3.7.0/kafka_2.12-3.7.0.tgz
 ```
+![alt text](https://github.com/DitoIhkam/ADI/blob/main/Week%201%20%3A%20Hands%20On%20Basic/Images/4.%20DOWNLOAD%20KAFKA.png?raw=true)
+
 
 > you can download and see version from this web, copy the link download
+
+
 
 ```
 https://kafka.apache.org/downloads
@@ -78,6 +87,8 @@ mkdir ~/kafka && cd ~/kafka
 ```
 tar -xvzf ~/Downloads/kafka.tgz --strip 1
 ```
+![alt text](https://github.com/DitoIhkam/ADI/blob/main/Week%201%20%3A%20Hands%20On%20Basic/Images/5.%20CREATE%20DIR%20KAFKA%2C%20CHANGE%20TO%20KAFKA%20DIR%20AND%20EXTRACT%20TAR.png?raw=true)
+
 
 ### 3. Kafka server configuration, edit file server.properties
 
@@ -92,6 +103,7 @@ sudo nano ~/kafka/config/server.properties
 ```
 delete.topic.enable = true
 ```
+
 
 ### 4: Create unit file Systemd and running kafka Server. Create systemd service for Kafka and ZooKeeper, then run Kafka:
 
