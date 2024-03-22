@@ -8,7 +8,7 @@
 ```
 sudo dnf update
 ```
-![alt text](?raw=true)
+![alt text](https://github.com/DitoIhkam/ADI/blob/main/Week%201%20%3A%20Hands%20On%20Basic/Images/11.%20SUDO%20DNF%20UPDATE.png?raw=true)
 
 ### 2. install java/jdk
 
@@ -20,7 +20,7 @@ sudo dnf install java-17-openjdk java-17-openjdk-devel
 ```
 java -version
 ```
-![alt text](?raw=true)
+![alt text](https://github.com/DitoIhkam/ADI/blob/main/Week%201%20%3A%20Hands%20On%20Basic/Images/12.%20INSTALL%20JAVA.png?raw=true)
 
 ## Install & Configuration
 
@@ -49,7 +49,7 @@ sudo usermod -aG wheel kafka
 ```
 su -l kafka
 ```
-![alt text](?raw=true)
+![alt text](https://github.com/DitoIhkam/ADI/blob/main/Week%201%20%3A%20Hands%20On%20Basic/Images/13.%20CREATE%20KAFKA%20USER.png?raw=true)
 
 
 ### 2. Download & Extract kafka binary
@@ -65,7 +65,7 @@ mkdir ~/downloads && cd ~/downloads
 ```
 wget https://downloads.apache.org/kafka/3.7.0/kafka_2.12-3.7.0.tgz
 ```
-![alt text](?raw=true)
+![alt text](https://github.com/DitoIhkam/ADI/blob/main/Week%201%20%3A%20Hands%20On%20Basic/Images/14.%20CREATE%20DIR%20DOWNLOAD%2C%20CHANGE%20TO%20DOWNLOAD%20AND%20DOWNLOAD%20KAFKA.png?raw=true)
 
 
 > you can download and see version from this web, copy the link download
@@ -76,12 +76,14 @@ wget https://downloads.apache.org/kafka/3.7.0/kafka_2.12-3.7.0.tgz
 https://kafka.apache.org/downloads
 ```
 
-- Go to this path and extract the targz. it will be extract folder
+- Go to this path, create kafka folder and extract the targz. it will be extract folder
 
 ```
-cd /usr/local
+cd /usr/local && mkdir kafka
 ```
-
+```
+cd /kafka
+```
 - Extract kafka tar from download folder to kafka folder (now at kafka folder)
 
 ```
@@ -89,7 +91,7 @@ tar -xvzf ~/downloads/kafka.tgz --strip 1
 ```
 > change kafka.tgz to file kafka name.
 
-![alt text](?raw=true)
+![alt text](https://github.com/DitoIhkam/ADI/blob/main/Week%201%20%3A%20Hands%20On%20Basic/Images/15.%20CREATE%20KAFKA%20FOLDER%20AT%20USR-LOCAL-KAFKA%20AND%20EXTRACT%20IT.png?raw=true)
 
 
 
@@ -140,6 +142,8 @@ Restart=on-abnormal
 WantedBy=multi-user.target
 ```
 
+![alt text](https://github.com/DitoIhkam/ADI/blob/main/Week%201%20%3A%20Hands%20On%20Basic/Images/16.%20EDIT%203%20FILE%20CONFIGURATION%20BASED%20ON%20SCRIPT%20BELOW.png?raw=true)
+
 ### 5. Manage kafka Service to start kafka
 
 * Reload
@@ -176,6 +180,7 @@ sudo systemctl status zookeeper
 ```
 sudo systemctl daemon-reload
 ```
+![alt text](https://github.com/DitoIhkam/ADI/blob/main/Week%201%20%3A%20Hands%20On%20Basic/Images/17.%20START%20AND%20RELOAD.png?raw=true)
 
 # Create Topic, Test produce data and consume data using CLI
 
@@ -198,9 +203,10 @@ echo "Hello, World" | ./kafka-console-producer.sh --broker-list localhost:9092 -
 ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic TutorialTopic --from-beginning
 ```
 
+![alt text](https://github.com/DitoIhkam/ADI/blob/main/Week%201%20%3A%20Hands%20On%20Basic/Images/18.%20CREATE%20TOPIC%2C%20PRODUCE%20AND%20CONSUME%20DATA.png?raw=true)
 
 
-# Zookeeper Quorum and Kafka Cluster id check
+# Zookeeper Quorum and Kafka Cluster id check (not completed)
 
 * Check topic list
 ```
