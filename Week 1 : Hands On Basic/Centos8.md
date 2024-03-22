@@ -13,7 +13,7 @@ sudo dnf update
 ### 2. install java/jdk
 
 ```
-sudo dnf install java
+sudo dnf install java-17-openjdk java-17-openjdk-devel
 ```
 
 * Check java version
