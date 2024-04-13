@@ -41,7 +41,7 @@ sudo passwd kafka
 - add user to sudo group
 
 ```
-sudo adduser kafka 
+sudo adduser kafka sudo
 ```
 
 - login via sudo to user that we create
