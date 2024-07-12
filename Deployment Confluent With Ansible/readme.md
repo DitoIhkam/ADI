@@ -29,6 +29,7 @@ ansible --version
 
 # Script
 
+Script hosts serta ansible.cfg ini terletak di /etc/ansible. 
 hosts
 ```
 [zookeepers]
@@ -76,7 +77,7 @@ interpreter_python =  auto_silent
 
 ![alt text](https://github.com/DitoIhkam/ADI/blob/main/img/ansible.cfg.png?raw=true)
 
-test ping
+test ping apakah koneksi ssh berhasil ke semua vm/ip
 
 ```
 ansible all -m ping
