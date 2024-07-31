@@ -1,4 +1,3 @@
-
 # Ansible Playbook Progress (Skip tag Health Check)
 
 ## Data VM
@@ -19,12 +18,15 @@
 ### Node 1 (10.100.13.172)
 
 Kafka❓
+
 ![alt text](https://github.com/DitoIhkam/ADI/blob/main/CP%20Ansible%20Progress/img/Screenshot%202024-07-31%20141819.png?raw=true)
 
 Zookeeper ✔
+
 ![alt text](https://github.com/DitoIhkam/ADI/blob/main/CP%20Ansible%20Progress/img/2.%20Deploy%201%20Zookeeper.png?raw=true)
 
 Schema Registry ✖
+
 ![alt text](https://github.com/DitoIhkam/ADI/blob/main/CP%20Ansible%20Progress/img/5.%20Deploy%201%20Schema%20Regist%20Fail.png?raw=true)
 
 Kafka Connect ✖
@@ -34,26 +36,33 @@ Kafka Connect ✖
 ### Node 2 (10.100.13.173)
 
 Kafka❓
+
 ![alt text](https://github.com/DitoIhkam/ADI/blob/main/CP%20Ansible%20Progress/img/Screenshot%202024-07-31%20141819.png?raw=true)
 
 Zookeeper ✔
+
 ![alt text](https://github.com/DitoIhkam/ADI/blob/main/CP%20Ansible%20Progress/img/3.%20Deploy%202%20Zookeeper.png?raw=true)
 
 Kafka Rest ✔
+
 ![alt text](https://github.com/DitoIhkam/ADI/blob/main/CP%20Ansible%20Progress/img/6.%20Deploy%202%20kafka-rest%20Success.png?raw=true)
 
 Control Center ✔
+
 ![alt text](https://github.com/DitoIhkam/ADI/blob/main/CP%20Ansible%20Progress/img/9.%20Deploy%202%20Control%20Center%20Success.png?raw=true)
 
 ### Node 3 (10.100.13.174)
 
 Kafka❓
+
 ![alt text](https://github.com/DitoIhkam/ADI/blob/main/CP%20Ansible%20Progress/img/Screenshot%202024-07-31%20141819.png?raw=true)
 
 Zookeeper ✔
+
 ![alt text](https://github.com/DitoIhkam/ADI/blob/main/CP%20Ansible%20Progress/img/4.%20Deploy%203%20Zookeeper.png?raw=true)
 
 ksql ❓
+
 ![alt text](https://github.com/DitoIhkam/ADI/blob/main/CP%20Ansible%20Progress/img/7.%20Deploy%203%20ksql%20not%20found.png?raw=true)
 
 ## Problem
