@@ -79,4 +79,5 @@ KSQL ❓
 	- ksql (Unknown)
 - All Node
 	- Wrong command to check kafka?
+### Access
 - Go to C3 (node 2 + port), 10.100.13.173:9021
