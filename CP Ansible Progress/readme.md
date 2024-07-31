@@ -49,7 +49,7 @@ KAFKA REST ✔
 
 CONTROL CENTER ✔
 
-![alt text](https://github.com/DitoIhkam/ADI/blob/main/CP%20Ansible%20Progress/img/9.%20Deploy%202%20Control%20Center%20Success.png?raw=true)
+![alt text](https://github.com/DitoIhkam/ADI/blob/main/CP%20Ansible%20Progress/img/11%20control%20center.png?raw=true)
 
 ### Node 3 (10.100.13.174)
 
