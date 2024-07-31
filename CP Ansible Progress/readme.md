@@ -30,7 +30,7 @@ SCHEMA REGISTRY ✖
 ![alt text](https://github.com/DitoIhkam/ADI/blob/main/CP%20Ansible%20Progress/img/5.%20Deploy%201%20Schema%20Regist%20Fail.png?raw=true)
 
 KAFKA CONNECT ✖
-![alt text](https://github.com/DitoIhkam/ADI/blob/main/CP%20Ansible%20Progress/img/8.%20Deploy%201%20Kafka%20Connect%20Failed.png?raw=true)
+![alt text](https://github.com/DitoIhkam/ADI/blob/main/CP%20Ansible%20Progress/img/10.%20Deploy%201%20Kafka%20Connect%20Failed.png?raw=true)
 
 
 ### Node 2 (10.100.13.173)
